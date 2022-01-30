@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app= Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']= 'mysql://root:admin@localhost:3306/tutorial'
+app.config['SQLALCHEMY_DATABASE_URI']= 'mysql://root:admin@127.0.0.1:3306/tutorial'
 app.secret_key = "super secret key"
 db= SQLAlchemy(app)
 
